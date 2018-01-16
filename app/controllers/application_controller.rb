@@ -48,7 +48,7 @@ class ApplicationController < Sinatra::Base
     redirect to '/:id/delete'
   end
 
-  get '/delete' do
+  get '/:id/delete' do
     erb :delete
   end
 end
