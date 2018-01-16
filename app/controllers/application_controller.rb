@@ -31,5 +31,6 @@ class ApplicationController < Sinatra::Base
 
   get '/posts/:id/edit' do
     @post = Post.find_by_id(params[:id])
+    redirect to '/posts/:id'
   end
 end
