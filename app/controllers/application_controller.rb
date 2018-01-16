@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
     redirect to '/posts'
   end
 
-  get '/posts' do
-    erb :show
-  end
+  # get '/posts' do
+  #   erb :show
+  # end
 end
