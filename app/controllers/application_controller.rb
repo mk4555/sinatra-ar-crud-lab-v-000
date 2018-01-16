@@ -42,7 +42,7 @@ class ApplicationController < Sinatra::Base
     erb :show
   end
 
-  get '/posts/:id/delete' do
+  delete '/posts/:id/delete' do
     @post = Post.fidn_by_id(params[:id])
     @post.delete
     redirect to '/posts'
