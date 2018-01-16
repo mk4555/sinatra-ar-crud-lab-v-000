@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts' do
-    erb :show
+    erb :index
   end
 
   get '/posts/:id' do
