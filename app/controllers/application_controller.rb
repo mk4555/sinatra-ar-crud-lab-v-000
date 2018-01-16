@@ -43,6 +43,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts/:id/delete' do
-    
+    @post = Post.fidn_by_id(params[:id])
+    @post.delete
   end
 end
