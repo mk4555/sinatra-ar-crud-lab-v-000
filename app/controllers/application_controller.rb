@@ -21,6 +21,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts' do
-    erb :posts
+    erb :show
   end
 end
