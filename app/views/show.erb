@@ -1,1 +1,4 @@
-<%@posts.all
+<%@posts.all do |t|%>
+  <%=t.name%>
+  <%=t.content%>
+<%end>
