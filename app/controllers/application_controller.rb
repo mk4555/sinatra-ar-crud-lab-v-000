@@ -38,5 +38,6 @@ class ApplicationController < Sinatra::Base
     @post = Post.find_by_id(params[:id])
     @post.name = params[:name]
     @post.content = params[:content]
+    @post.save
   end
 end
